@@ -10,7 +10,7 @@ npm install spud.js@latest
 
 ### Define the package:
 ```js
-const spud = require('spud.js');
+const { MessagePagination } = require('spud.js');
 ```
 
 # Basics
