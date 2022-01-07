@@ -1,56 +1,38 @@
-# Spud.js
-<a href="https://www.npmjs.com/package/spud.js"><img src="https://img.shields.io/npm/dt/spud.js?maxAge=3600" alt="NPM downloads" /></a>
-[![npm](https://img.shields.io/npm/v/spud.js.svg)](https://www.npmjs.com/package/spud.js)
-[![install size](https://packagephobia.com/badge?p=spud.js)](https://packagephobia.com/result?p=spud.js)
+# Spud.js Documentation
+### Welcome to spud.js! Get started with spud.js npm package, very easy to use and user-friendly multipurpose npm package and api for <a href="https://discord.js.org/#/" target="_blank">discord.js v13</a>.
+#### If you don't understand something in the documentation, you are experiencing problems, or you just need support, please don't hesitate to join our official <a href="https://discord.gg/7MaXqCy6JH">support server</a>.
 
-[![NPM](https://nodei.co/npm/spud.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/spud.js/)
-
-Some cool package for discord.js :)
-## Installation:
-```
-npm install spud.js
-```
-
-## Features:
-- [pagination](https://en.wikipedia.org/wiki/Pagination#:~:text=Pagination%2C%20also%20known%20as%20paging,electronic%20pages%20or%20printed%20pages.) - Easiest way to make discord.js button pagination
-
-### Require it in your file:
+### installing the package: <a href="https://www.npmjs.com/package/spud.js"><img src="https://img.shields.io/npm/v/spud.js?maxAge=3600" alt="NPM version" /></a>
+###### installing the latest version of spud.js:
 ```js
-const { pagination } = require('spud.js');
+npm install spud.js@latest
 ```
-### Starter Template:
+
+### Define the package:
 ```js
-const { Client, MessageEmbed } = require('discord.js');
-
-const client = new Client({
-  intents: [
-    'GUILDS',
-    'GUILD_MESSAGES',
-  ],
-});
-
-client.on('messageCreate', async (message) => {
-  if(message.content == 'pagination') {
-    const embed1 = new MessageEmbed().setTitle('1');
-    const embed2 = new MessageEmbed().setTitle('2');
-
-    const pagination = new MessagePagination({
-      message,
-      embeds: [embed1, embed2],
-      replyOptions: {
-        mention: true,
-        message,
-      },
-      content: 'This is a message content!',
-    });
-  }
-});
+const spud = require('spud.js');
 ```
-### Custom pagination buttons:
+
+# Basics
+#### Quick pagination:
 ```js
-new MessagePagination({
+const embed1 = new MessageEmbed().setTitle('First Embed');
+const embed2 = new MessageEmbed().setTitle('Second Embed');
+
+const pagination = new MessagePagination({
   message,
-  embeds: [embed1, embed2],
+  embeds: [embed1, embed2]
+})
+```
+
+#### Custom Buttons:
+```js
+const embed1 = new MessageEmbed().setTitle('First Embed');
+const embed2 = new MessageEmbed().setTitle('Second Embed');
+
+const pagination = new MessagePagination({
+  message,
+  embeds: [embed1, embed2]
   button: [
     {
       name: 'first', // The button name you wish to modify
@@ -58,7 +40,7 @@ new MessagePagination({
       style: 'SECONDARY', // Must be a valid discord button style
     },
   ],
-});
+})
 ```
 For discord button styles refer to the [discord.js docs](https://discord.js.org/#/docs/main/stable/typedef/MessageButtonStyle) or [Discord Dev](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)
 #### Button options:
@@ -67,10 +49,6 @@ For discord button styles refer to the [discord.js docs](https://discord.js.org/
 - [next]() - Goes to the next page
 - [last]()  - Goes to the last page `(If fastSkip is set to true)`
 - [pageTravel]() - Type in the page you want to travel
-
-## Planned
-- Reaction pagination
-- More things coming soon...!
 
 ### Options
 - message - [Message](https://discord.js.org/#/docs/main/stable/class/Message) `required`
@@ -84,5 +62,24 @@ For discord button styles refer to the [discord.js docs](https://discord.js.org/
 - max - [Number](https://developer.mozilla.org/en-US/docs/Glossary/Number)
 - customFilter - [User#id](https://discord.js.org/#/docs/main/stable/class/User?scrollTo=id)
 - button - [Array](https://developer.mozilla.org/en-US/docs/Glossary/Array)
-- messageReply - [Message](https://discord.js.org/#/docs/main/stable/class/Message)
+- replyOptions - { message: [Message](https://discord.js.org/#/docs/main/stable/class/Message), mention: [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) }
 - content - [String](https://developer.mozilla.org/en-US/docs/Glossary/String)
+
+## All Options enabled:
+```js
+new MessagePagination({
+  message: message,
+  embeds: [],
+  author: message.author,
+  channel: message.channel,
+  fastSkip: true,
+  time: 60000 * 5, //5 minutes
+  resetTimerOnClick: true,
+  pageTravel: true,
+  max: 10,
+  customFilter: message.author.id,
+  button: [],
+  replyOptions: {message: message, mention: true},
+  content: "Pagination by spud.js"
+})
+```
