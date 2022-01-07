@@ -50,6 +50,25 @@ For discord button styles refer to the [discord.js docs](https://discord.js.org/
 - [last]()  - Goes to the last page `(If fastSkip is set to true)`
 - [pageTravel]() - Type in the page you want to travel
 
+### All Options enabled:
+```js
+new MessagePagination({
+  message,
+  embeds: [...],
+  author: message.author,
+  channel: message.channel,
+  fastSkip: true,
+  time: 600000, //  10 minutes
+  resetTimerOnClick: true,
+  pageTravel: true,
+  max: 20,
+  customFilter: message.author.id,
+  button: [...],
+  replyOptions: { message, mention: true },
+  content: "Pagination by spud.js"
+})
+```
+
 ### Options
 - message - [Message](https://discord.js.org/#/docs/main/stable/class/Message) `required`
 - embeds - [Array](https://developer.mozilla.org/en-US/docs/Glossary/Array) `required`
@@ -64,22 +83,3 @@ For discord button styles refer to the [discord.js docs](https://discord.js.org/
 - button - [Array](https://developer.mozilla.org/en-US/docs/Glossary/Array)
 - replyOptions - { message: [Message](https://discord.js.org/#/docs/main/stable/class/Message), mention: [Boolean](https://developer.mozilla.org/en-US/docs/Glossary/Boolean) }
 - content - [String](https://developer.mozilla.org/en-US/docs/Glossary/String)
-
-## All Options enabled:
-```js
-new MessagePagination({
-  message: message,
-  embeds: [],
-  author: message.author,
-  channel: message.channel,
-  fastSkip: true,
-  time: 60000 * 5, //5 minutes
-  resetTimerOnClick: true,
-  pageTravel: true,
-  max: 10,
-  customFilter: message.author.id,
-  button: [],
-  replyOptions: {message: message, mention: true},
-  content: "Pagination by spud.js"
-})
-```
