@@ -1,4 +1,5 @@
 # Spud.js Documentation
+<a href="https://www.npmjs.com/package/spud.js"><img src="https://img.shields.io/npm/dt/spud.js?maxAge=3600" alt="NPM downloads" /></a> <a href="https://www.npmjs.com/package/spud.js"><img src="https://img.shields.io/npm/v/spud.js?maxAge=3600" alt="NPM version" /></a>
 ### Welcome to spud.js! Get started with spud.js npm package, very easy to use and user-friendly multipurpose npm package and api for <a href="https://discord.js.org/#/" target="_blank">discord.js v13</a>.
 #### If you don't understand something in the documentation, you are experiencing problems, or you just need support, please don't hesitate to join our official <a href="https://discord.gg/7MaXqCy6JH">support server</a>.
 
