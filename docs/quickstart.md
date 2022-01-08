@@ -49,4 +49,4 @@ const pagination = new MessagePagination({
 Pretty simple stuff right?
 
 And thats it for the quickstart!
-To check all available options, look inside our [documentation!(coming soon)]()
+To check all available options, look inside our [documentation!(coming soon)](https://github.com/MrPotato30/spudjs-docs)
