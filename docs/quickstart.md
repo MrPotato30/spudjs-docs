@@ -1,12 +1,12 @@
 ## Quick start
 
-If you reading this - you probably  wanted in pagination, don't worry, we gotchu covered!
+If you reading this - you probably wanted in pagination, don't worry, we gotchu!
 
 First of all, install the package
 ```
 npm i spud.js@latest
 ```
-After its installed import it:
+After it's installed import it:
 ```js
 const { MessagePagination } = require('spud.js');
 ```
