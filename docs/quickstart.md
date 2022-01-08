@@ -33,3 +33,17 @@ client.on('messageCreate', (message) => {
   }
 })
 ```
+Of course this is but an example but if you were to do something more advanced, lets say we disable pinging and reply to a message, we'll add a custom timer and choose fast skips for convenience
+```js
+const pagination = new MessagePagination({
+  message,
+  embeds: [page1, page2],
+  fastSkip: true,
+  replyOptions: {
+    mention: false,
+    message
+  },
+  time: 6000
+})
+```
+Pretty simple stuff right?
