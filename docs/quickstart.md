@@ -47,3 +47,5 @@ const pagination = new MessagePagination({
 })
 ```
 Pretty simple stuff right?
+
+And thats it for the quickstart!
