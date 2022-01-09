@@ -8,13 +8,13 @@ new MessagePagination({ data });
 ----
 | Parameter         | Accepts           | Required |
 | ----------------- | ----------------- | -------- |
-| message           | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message)       | ✔️      |
+| message           | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message)      | ✔️      |
 | embeds            | Array             | ✔️      |
 | buttons           | [buttonOptions]() |          |
 | fastSkip          | Boolean           |          |
 | time              | Number            |          |
 | max               | Boolean           |          |
-| author            | [User](https://discord.js.org/#/docs/discord.js/stable/class/User)          |          |
+| author            | [User](https://discord.js.org/#/docs/discord.js/stable/class/User)             |          |
 | channel           | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel)       |          |
 | content           | String            |          |
 | replyOptions      | [replyOptions]()  |          |
@@ -30,7 +30,7 @@ const pagination = new MessagePagination({
   message,
   embeds: [embeds],
   buttons: [
-  {
+    {
       name: 'first', // The button name you wish to modify
       emoji: '⬅️',
       style: 'SECONDARY', // Must be a valid discord button style
