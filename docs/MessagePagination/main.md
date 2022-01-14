@@ -23,7 +23,7 @@ new MessagePagination({ data });
 ----
 ### buttonOptions
 **Types:**
-- Array[object]
+- buttons: Array[object]
 #### Usage
 ```js
 const pagination = new MessagePagination({
@@ -40,8 +40,8 @@ const pagination = new MessagePagination({
 ```
 ### replyOptions
 **Types:**
-- [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message)
-- Boolean
+- message: [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message)
+- mention: Boolean
 #### Usage
 ```js
 const pagination = new MessagePaginaton({
