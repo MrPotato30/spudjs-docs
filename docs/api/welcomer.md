@@ -26,4 +26,4 @@ client.on('guildMemberAdd', async(member) => {
 client.login('token')
 ```
 And the above should send something like:
-![this])()
+![this])(./assets/generate.png)
