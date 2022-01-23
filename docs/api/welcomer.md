@@ -49,6 +49,7 @@ client.on('guildMemberAdd', async(member) => {
     text1: `Welcome to our server ${member.user.username}!`,
     text2: `We now have ${member.guild.memberCount} members!`
   })
+  const channel = await member.guild.channels.fetch('Welcome_Channel_ID');
   
   channel.send({ files: [card] })
 })
