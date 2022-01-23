@@ -34,7 +34,7 @@ Of course doing it like this is stupidly slow so we've made it a function in the
 If you *don't* want to install the package use the above method (Don't know why you'd want to suffer) Otherwise do the below method
 
 ```js
-const Discord = require('discord.js'),
+const Discord = require('discord.js');
 const axios = require('axios');
 const spud = require('spud.js');
 
