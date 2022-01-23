@@ -51,7 +51,7 @@ For discord button styles refer to the [discord.js docs](https://discord.js.org/
 - [last]()  - Goes to the last page `(If fastSkip is set to true)`
 - [pageTravel]() - Type in the page you want to travel
 
-### All Options enabled:
+### All Options preview:
 ```js
 new MessagePagination({
   message,
