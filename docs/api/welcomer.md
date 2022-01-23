@@ -15,7 +15,7 @@ https://welcomer.spudjs.repl.co/#
 const Discord = require('discord.js')
 const axios = require('axios')
 
-const client = new Discord.Client({ options });
+const client = new Discord.Client({ ... });
 
 client.on('guildMemberAdd', async(member) => {
 
