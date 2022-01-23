@@ -1,10 +1,10 @@
 # Base URL
 ```
-https://welcomer.spudjs.repl.co/
+https://welcomer.spudjs.repl.co/#
 ```
 
 ### Options
-- name
+- tag
 - avatar
 - text1
 - text2
@@ -19,7 +19,7 @@ const client = new Discord.Client({ options });
 
 client.on('guildMemberAdd', async(member) => {
 
-  const card = await axios.get(`welcomer.spudjs.repl.co/generate?name=${member.user.username}&avatar=${member.user.displayAvatarURL({ format: 'png' })}&background=https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg`);
+  const card = await axios.get(`welcomer.spudjs.repl.co/generate?tag=${member.user.tag}&avatar=${member.user.displayAvatarURL({ format: 'png' })}&background=https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg`);
   const channel = await member.guild.channels.fetch('Welcome_Channel_ID');
   
   channel.send({ files: [card] })
@@ -42,8 +42,8 @@ const client = new Discord.Client({ options });
 
 client.on('guildMemberAdd', async(member) => {
 
-  const card = spud.api.welcomer({
-    name: member.user.username,
+  const card = spud.API.welcomer({
+    tag: member.user.tag,
     background: 'https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg',
     avatar: member.user.displayAvatarURL({ format: 'png' }),
     text1: `Welcome to our server ${member.user.username}!`,
