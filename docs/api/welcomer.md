@@ -42,7 +42,7 @@ const client = new Discord.Client({ options });
 
 client.on('guildMemberAdd', async(member) => {
 
-  const card = spud.API.welcomer({
+  const card = new spud.API.welcomer({
     tag: member.user.tag,
     background: 'https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg',
     avatar: member.user.displayAvatarURL({ format: 'png' }),
