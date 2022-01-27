@@ -12,10 +12,8 @@ Most of the current endpoints just require you to fetch;
 const axios = require('axios'); // You can use any other package for this
 
 (async () => {
-
    const fetched = await axios.fetch('https://spudjs.repl.co/api/{enpoint}');
    console.log(fetched.data)
-
 })();
 ```
 ## Meme
