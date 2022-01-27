@@ -5,7 +5,7 @@ The base URL for the endpoint is:
 https://spudjs.repl.co/api/
 ```
 
-As of writing, there only 4 endpoints have been added!
+As of writing, there only 4 endpoints that have been added!
 
 Most of the current endpoints just require you to fetch;
 ```js
