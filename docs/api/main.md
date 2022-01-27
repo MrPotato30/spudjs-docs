@@ -26,7 +26,7 @@ Generates a random...food image?<br>
 I guess you'd need this if you're hungry...
 ## Welcomer
 A fairly customisable welcomer image generator!
-For a preview check `welcomer.spudjs.repl.co/generate`<br>
+For a preview check [`https://welcomer.spudjs.repl.co/generate`](https://welcomer.spudjs.repl.co/generate)<br>
 More detailed info in the [docs](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/api/welcomer.md)
 ## Quote
 Gives a random and (probably) famous quote.
