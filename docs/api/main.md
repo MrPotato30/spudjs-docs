@@ -1,8 +1,8 @@
 # Spud.js API
 
-The base URL for the endpoint is:
+The base URL is:
 ```
-https://spudjs.repl.co/api/
+https://spudjs.repl.co/api/{enpoint}
 ```
 
 As of writing, there only 4 endpoints that have been added!
