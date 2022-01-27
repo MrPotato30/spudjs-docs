@@ -43,12 +43,7 @@ const pagination = new MessagePagination({
 
 For checking what are valid buttons styles, check [here](https://discord.com/developers/docs/interactions/message-components#button-object-button-styles)
 
-For buttons names that you can modify, they are:
-- first (requires *fastSkip* option to take effect)
-- next
-- previous
-- last (requires *fastSkip* option to take effect)
-
+For buttons names that you can modify
 ### replyOptions
 Options for replying to a specific message. Also allows you to disable pinging.
 
