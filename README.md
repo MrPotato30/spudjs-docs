@@ -24,7 +24,7 @@ const client = new Client({
 
 client.on('messageCreate', (message) => {
   const page1 = new MessageEmbed().setTitle('1').setDescription('one')
-  const page2 = new MessageEmbed.setTitle('2').setDescription('two')
+  const page2 = new MessageEmbed().setTitle('2').setDescription('two')
   if (message.content === 'pagination') {
     const pagination = new MessagePagination({
       message,
