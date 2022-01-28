@@ -24,7 +24,7 @@ client.on('guildMemberAdd', async(member) => {
   const card = await axios.get(`welcomer.spudjs.repl.co/generate?tag=${member.user.tag}&avatar=${member.user.displayAvatarURL({ format: 'png' })}&background=https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg`);
   const channel = await member.guild.channels.fetch('Welcome_Channel_ID');
   
-  channel.send({ files: [new Discord.MessageAttachment(card.url, 'welcomer.png')] })
+  channel.send({ files: [card] })
 })
 
 client.login('token')
@@ -52,7 +52,7 @@ client.on('guildMemberAdd', async(member) => {
   })
   const channel = await member.guild.channels.fetch('Welcome_Channel_ID');
   
-  channel.send({ files: [card] })
+  channel.send({ files: [new Discord.MessageAttachment(card.url, 'welcomer.png')] })
 })
 
 client.login('token')
