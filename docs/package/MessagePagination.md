@@ -3,7 +3,7 @@ Represents an instance of pagination
 
 ## Constructor
 ```js
-new MessagePagination({ data });
+new MessagePagination( [options] );
 ```
 ----
 | Parameter         | Accepts           | Required |
