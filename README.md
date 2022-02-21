@@ -50,4 +50,5 @@ Pretty simple stuff right?
 
 And thats it for the quickstart!
 To check all available options, look inside our [documentation!](https://github.com/MrPotato30/spudjs-docs) or visit our [website](https://spudjs.repl.co/)
+
 Join our [support server](https://spudjs.repl.co/support)
