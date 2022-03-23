@@ -1,6 +1,6 @@
 ## Quick start
 
-If you reading this - you probably wanted in pagination, don't worry, we gotchu!
+If you reading this - you probably wanted pagination, don't worry, we gotchu!
 
 First of all, install the package
 ```
@@ -49,6 +49,7 @@ const pagination = new MessagePagination({
 Pretty simple stuff right?
 
 And thats it for the quickstart!
-To check all available options, look inside our [documentation!](https://github.com/MrPotato30/spudjs-docs) or visit our [website](https://spudjs.repl.co/)
+To check all available options, look inside our [documentation](https://github.com/MrPotato30/spudjs-docs) or visit our [website](https://spudjs.repl.co/)!
 
-Join our [support server](https://spudjs.repl.co/support)
+
+Join our [support server](https://spudjs.repl.co/support) here!
