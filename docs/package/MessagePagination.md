@@ -10,7 +10,7 @@ new MessagePagination({ options });
 | ----------------- | ----------------- | -------- |
 | message           | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message)      | ✔️      |
 | embeds            | Array             | ✔️      |
-| buttons           | [buttonOptions]() |          |
+| button            | [buttonOptions]() |          |
 | fastSkip          | Boolean           |          |
 | time              | Number            |          |
 | max               | Boolean           |          |
@@ -25,13 +25,13 @@ new MessagePagination({ options });
 Options required for creating custom buttons if you don't fancy the default ones.
 
 **Types:**
-- buttons: Array[object]
+- button: Array[object]
 #### Usage
 ```js
 const pagination = new MessagePagination({
   message,
   embeds: [embeds],
-  buttons: [
+  button: [
     {
       name: 'first', // The button name you wish to modify
       emoji: '⬅️',
@@ -58,6 +58,22 @@ const pagination = new MessagePaginaton({
   replyOptions: {
     message: message // The message you wish to reply to
     mention: true // Set to false in order to not ping
+  }
+})
+```
+
+## Slash Commands
+*inside replyOptions*
+- interaction: \<Boolean> `must be set to **true**`
+- type: \<String> |  available options: [followUp](https://discord.js.org/#/docs/discord.js/stable/class/BaseCommandInteraction?scrollTo=followUp) / [editReply](https://discord.js.org/#/docs/discord.js/stable/class/ButtonInteraction?scrollTo=editReply) / [reply](https://discord.js.org/#/docs/discord.js/stable/class/ButtonInteraction?scrollTo=reply) `default: "reply"`
+### example:
+```js
+const pagination = new MessagePaginaton({
+  message: interaction
+  embeds: [embeds]
+  replyOptions: {
+    interaction: true,
+    type: "followUp"
   }
 })
 ```
