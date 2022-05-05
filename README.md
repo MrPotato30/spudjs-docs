@@ -2,7 +2,7 @@
 
 If you reading this - you probably wanted pagination, don't worry, we gotchu!
 
-First of all, install the package
+First, install the package. (No shit, Sherlock)
 ```
 npm i spud.js@latest
 ```
@@ -10,8 +10,9 @@ After it's installed import it:
 ```js
 const { MessagePagination } = require('spud.js');
 ```
+And done.
 
-Then a basic bot example would be something like:
+A simple example of the pagination:
 ```js
 const { MessagePagination } = require('spud.js');
 const { Client, MessageEmbed } = require('discord.js')
