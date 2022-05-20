@@ -1,9 +1,8 @@
-# MessagePagination
-Represents an instance of pagination
+# ButtonPagination
 
 ## Constructor
 ```js
-new MessagePagination({ options });
+new ButtonPagination({ options });
 ```
 ----
 | Parameter         | Accepts           | Required |
@@ -13,13 +12,14 @@ new MessagePagination({ options });
 | button            | [buttonOptions]() |          |
 | fastSkip          | Boolean           |          |
 | time              | Number            |          |
-| max               | Boolean           |          |
+| max               | Number            |          |
 | author            | [User](https://discord.js.org/#/docs/discord.js/stable/class/User)             |          |
 | channel           | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel)       |          |
 | content           | String            |          |
 | replyOptions      | [replyOptions]()  |          |
 | resetTimerOnClick | Boolean           |          |
 | pageTravel        | Boolean           |          |
+| customComponents  | Object            |          |
 ----
 ### buttonOptions
 Options required for creating custom buttons if you don't fancy the default ones.
