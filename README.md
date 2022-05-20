@@ -2,55 +2,46 @@
 
 If you reading this - you probably wanted pagination, don't worry, we gotchu!
 
-First, install the package. (No shit, Sherlock)
+First, install the package. (No sh*t, Sherlock)
 ```
 npm i spud.js@latest
 ```
-After it's installed import it:
+`current version is; 2.0.0`
+After it's done installing, import it to your project/file:
 ```js
-const { MessagePagination } = require('spud.js');
+const Spud = require('spud.js');
 ```
-And done.
+Easy as that.
 
 A simple example of the pagination:
 ```js
-const { MessagePagination } = require('spud.js');
+const { ButtonPaginationBuilder } = require('spud.js');
 const { Client, MessageEmbed } = require('discord.js')
-const client = new Client({
-  intents: [
-     'GUILDS',
-     'GUILD_MESSAGES'
-  ],
-});
+const client = new Client({...});
 
 client.on('messageCreate', (message) => {
-  const page1 = new MessageEmbed().setTitle('1').setDescription('one')
-  const page2 = new MessageEmbed().setTitle('2').setDescription('two')
+  const page1 = new MessageEmbed().setDescription('This is page 1')
+  const page2 = new MessageEmbed().setDescription('This is page 1')
   if (message.content === 'pagination') {
-    const pagination = new MessagePagination({
-      message,
-      embeds: [page1, page2]
-    })   
+    const pagination = new ButtonPaginationBuilder(message)
+      .setEmbeds(page1, page2)
+
+    pagination.send()
   }
 })
 ```
-Of course this is but an example but if you were to do something more advanced, lets say we disable pinging and reply to a message, we'll add a custom timer and choose fast skips for convenience
+Of course this is an example but if you were to do something more advanced, we'll add a 1 minute timer and enable fast skip for convenience
 ```js
-const pagination = new MessagePagination({
-  message,
-  embeds: [page1, page2],
-  fastSkip: true,
-  replyOptions: {
-    mention: false,
-    message
-  },
-  time: 6000
-})
+const pagination = new ButtonPaginationBuilder(message)
+  .setEmbeds(page1, page2)
+  .setTimer(60000) // *optional (default 0)
+  .fastSkip(true) // *optional (default false)
+
+pagination.send()
 ```
-Pretty simple stuff right?
+Now our the pagination buttons will *automatically* be disabled after a minute, Pretty simple stuff right?
 
 And thats it for the quickstart!
-To check all available options, look inside our [documentation](https://github.com/MrPotato30/spudjs-docs) or visit our [website](https://spudjs.repl.co/)!
+To explore all available features and options, feel free to look inside our [docs](https://github.com/MrPotato30/spudjs-docs/tree/main/docs) or visit our [website](https://spud.js.org)!
 
-
-Join our [support server](https://spudjs.repl.co/support) here!
+Please join our [support server](https://spudjs.repl.co/support)! Don't miss out next spud.js updates! 😉
