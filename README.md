@@ -30,11 +30,11 @@ client.on('messageCreate', (message) => {
   }
 })
 ```
-Message and Embeds are **required** on paginations, add an embed or set embeds using [`.addEmbeds(...)`]() or [`.setEmbeds(...)`]()
+Message and Embeds are **required** on paginations, add an embed or set embeds using [`.addEmbeds(...)`](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/package/ButtonPaginationBuilder.md#addembedsembeds) or [`.setEmbeds(...)`](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/package/ButtonPaginationBuilder.md#setembedsembeds)
 
 ---
 
-Of course this is an example but if you were to do something more advanced, we'll add a 1 minute timer and enable fast skip for convenience
+Of course that is an example, but if you were to do something more advanced, let's add a 1 minute timer and enable fast skip for convenience
 ```js
 const pagination = new ButtonPaginationBuilder(message)
   .setEmbeds(page1, page2)
