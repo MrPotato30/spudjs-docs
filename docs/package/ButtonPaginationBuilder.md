@@ -38,6 +38,8 @@ new ButtonPaginationBuilder( data );
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
 | ms | [Number]() | ✅ | 0 | The time until the pagination expired |
 
+---
+
 ### .setMax([max]())
 
 | PARAMETER   |      TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
