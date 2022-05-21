@@ -30,6 +30,10 @@ client.on('messageCreate', (message) => {
   }
 })
 ```
+Message and Embeds are **required** on paginations, add an embed or set embeds using [`.addEmbeds(...)`]() or [`.setEmbeds(...)`]()
+
+---
+
 Of course this is an example but if you were to do something more advanced, we'll add a 1 minute timer and enable fast skip for convenience
 ```js
 const pagination = new ButtonPaginationBuilder(message)
