@@ -90,7 +90,7 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-## .pageTravel()
+### .pageTravel()
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |           |[Boolean]() |✅|           |         |          | 
@@ -98,7 +98,7 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-## .setComponents()
+### .setComponents()
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |           |[Events]() |✅|           |         |          | 
