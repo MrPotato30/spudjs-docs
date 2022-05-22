@@ -82,8 +82,7 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-### .setIdle()
+### .setIdle([idle]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |[Boolean]() |✅| 
-|           |            |   |          |         |           |
+|     idle      |[Boolean]() |✅| false | reset timer on click|
