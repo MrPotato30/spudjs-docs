@@ -82,6 +82,7 @@ new ButtonPaginationBuilder( data );
 
 ---
 ### .setIdle([idle]())
+
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |       idle    |[Boolean]() |✅| false | reset timer on click|
@@ -89,6 +90,7 @@ new ButtonPaginationBuilder( data );
 ---
 
 ### .pageTravel([boolean]())
+
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |    boolean|[Boolean]()   |✅          |   false  |  type in the number of the page you want to travel to  |
@@ -96,8 +98,20 @@ new ButtonPaginationBuilder( data );
 ---
 
 ### .setComponents([components](), [event]())
+
 | PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|
 |components|[Array]()/[MessageActionRow]()|   ✅  |       the custom components  |
 |event|[function]() |         |       the event for the custom components  | 
 
+---
+
+### .trash([Boolean]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|    Boolean|[Boolean]()   |✅          |   false  |  delete button  |
+
+---
+
+### .setButton([name](), [properties]())
