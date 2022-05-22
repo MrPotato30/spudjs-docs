@@ -45,3 +45,34 @@ new ButtonPaginationBuilder( data );
 | PARAMETER   |      TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
 | max | [Number]() | ✅ | 0 | Amount of clicks untill pagination expires |
+
+---
+
+### .setAuthor([User]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author | the author of the pagination |
+
+---
+
+### .setChannel([Channel]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| Channel | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel) | ✅ | message.channel | the channel for pagination |
+
+---
+
+### .setContent([content]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| content | [String]() | ✅ | "" | message content |
+
+### .replyOption([options](), [enabled]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| options | [Object]() | ✅ | { } | reply to the message/interaction |
+| enabled | [Boolean]() | ✅ | false | reply options is enabled or not |
