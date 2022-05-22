@@ -1,6 +1,6 @@
 # ButtonPaginationBuilder
 
-### Constructor
+## Constructor
 ```js
 new ButtonPaginationBuilder( data );
 ```
@@ -69,6 +69,8 @@ new ButtonPaginationBuilder( data );
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
 | content | [String]() | ✅ | "" | message content |
+
+---
 
 ### .replyOption([options](), [enabled]())
 
