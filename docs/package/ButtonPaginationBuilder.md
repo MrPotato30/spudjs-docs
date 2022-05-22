@@ -102,5 +102,5 @@ new ButtonPaginationBuilder( data );
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |           |[Events]() |✅|           |         |          | 
-|           |[Components]|✅|          |         |           |
+|           |[Components]()|✅|          |         |           |
 
