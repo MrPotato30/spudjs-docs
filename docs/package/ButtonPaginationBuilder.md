@@ -81,26 +81,23 @@ new ButtonPaginationBuilder( data );
 | enabled | [Boolean]() | ✅ | false | reply options is enabled or not |
 
 ---
-
-### .setIdle()
+### .setIdle([idle]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |[Boolean]() |✅| 
-|           |            |   |          |         |           |
+|       idle    |[Boolean]() |✅| false | reset timer on click|
 
 ---
 
-### .pageTravel()
+### .pageTravel([boolean]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |[Boolean]() |✅|           |         |          | 
-|           |            |   |          |         |           |
+|    boolean|[Boolean]()   |✅          |   false  |  type in the number of the page you want to travel to  |
 
 ---
 
-### .setComponents()
-| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |[Events]() |✅|           |         |          | 
-|           |[Components]()|✅|          |         |           |
+### .setComponents([components](), [event]())
+| PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|
+|components|[Array]()/[MessageActionRow]()|   ✅  |       the custom components  |
+|event|[function]() |         |       the event for the custom components  | 
 
