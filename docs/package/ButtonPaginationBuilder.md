@@ -10,14 +10,14 @@ new ButtonPaginationBuilder( data );
 
 ## Methods
 
-### .setEmbeds([...embeds]())*
+### .setEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
 | embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | The embeds to set
 
 ---
 
-### .addEmbeds([...embeds]())*
+### .addEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
 | embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | The embeds to add |
