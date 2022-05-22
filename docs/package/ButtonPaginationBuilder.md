@@ -46,6 +46,7 @@ new ButtonPaginationBuilder( data );
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
 | max | [Number]() | ✅ | 0 | Amount of clicks untill pagination expires |
 
+
 ---
 
 ### .setAuthor([User]())
@@ -78,3 +79,9 @@ new ButtonPaginationBuilder( data );
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
 | options | [Object]() | ✅ | { } | reply to the message/interaction |
 | enabled | [Boolean]() | ✅ | false | reply options is enabled or not |
+
+### .setIdle()
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|           |[Boolean]() |✅| 
+|           |            |   |          |         |           |
