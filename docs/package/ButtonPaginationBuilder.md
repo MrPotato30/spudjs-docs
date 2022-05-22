@@ -80,6 +80,8 @@ new ButtonPaginationBuilder( data );
 | options | [Object]() | ✅ | { } | reply to the message/interaction |
 | enabled | [Boolean]() | ✅ | false | reply options is enabled or not |
 
+---
+
 ### .setIdle()
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
