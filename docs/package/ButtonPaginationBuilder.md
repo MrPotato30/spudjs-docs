@@ -82,7 +82,25 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-### .setIdle([idle]())
+### .setIdle()
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|     idle      |[Boolean]() |✅| false | reset timer on click|
+|           |[Boolean]() |✅| 
+|           |            |   |          |         |           |
+
+---
+
+## .pageTravel()
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|           |[Boolean]() |✅|           |         |          | 
+|           |            |   |          |         |           |
+
+---
+
+## .setComponents()
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|           |[Events]() |✅|           |         |          | 
+|           |[Components]|✅|          |         |           |
+
