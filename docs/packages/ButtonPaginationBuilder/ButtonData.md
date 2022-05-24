@@ -51,7 +51,8 @@
 
 
 --- 
-an example:
+
+### Example:
 ```js
 .setButton("previous", {
   style: "SUCCESS", 
