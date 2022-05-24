@@ -1,8 +1,8 @@
 # Button Names and Properties
 
-#### type: [Object]()
-
 ## ButtonNames
+
+#### type: [String]()
 
 ### first
 - Only display if `fastSkip` is enabled
@@ -37,6 +37,8 @@
 - default (emoji: ⛔, style: DANGER )
 
 ## ButtonProperties
+
+#### type: [Object]()
 
 ### style
 - must be a valid discord button style
