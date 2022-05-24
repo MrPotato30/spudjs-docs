@@ -101,8 +101,8 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|
-|components|[Array]()/[MessageActionRow]()|   ✅  |       the custom components  |
-|event|[function]() |         |       the event for the custom components  | 
+|components|[Array]() / [MessageActionRow]()|   ✅  |       the custom components  |
+|event|[function]() |   ✅      |       the event for the custom components  | 
 
 ---
 
@@ -110,8 +110,17 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    Boolean|[Boolean]()   |✅          |   false  |  delete button  |
+|    Boolean|[Boolean]()   |✅          |   false  |  button to delete the pagination  |
 
 ---
 
 ### .setButton([name](), [properties]())
+- see [example](https://github.com/MrPotato30/spudjs-docs/edit/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#example)
+- ButtonNames: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)
+- ButtonProperties: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)
+
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|    name| [String]() / [ButtonNames](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)   |✅          |   " "  |  the name of the button to customize  |
+|    properties| [Object]() / [ButtonProperties](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)   |✅          |   { }  |  customize button properties  |
