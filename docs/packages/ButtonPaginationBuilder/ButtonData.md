@@ -52,7 +52,7 @@
 
 --- 
 
-### Example:
+## Example:
 ```js
 .setButton("previous", {
   style: "SUCCESS", 
@@ -60,3 +60,8 @@
   label: "back"
  })
 ```
+
+### result: 
+- the previous button
+
+![image](https://user-images.githubusercontent.com/85820415/170090386-3babc322-56ee-4447-ac63-11da14c7402d.png)
