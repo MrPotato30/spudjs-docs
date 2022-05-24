@@ -1,4 +1,4 @@
-# Button Properties
+# Button Names and Properties
 
 #### type: [Object]()
 
