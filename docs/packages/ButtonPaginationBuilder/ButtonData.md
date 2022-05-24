@@ -2,7 +2,7 @@
 
 #### type: [Object]()
 
-## Name
+## ButtonNames
 
 ### first
 - Only display if `fastSkip` is enabled
@@ -36,7 +36,7 @@
 - deletes the pagination
 - default (emoji: ⛔, style: DANGER )
 
-## Properties
+## ButtonProperties
 
 ### style
 - must be a valid discord button style
