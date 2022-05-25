@@ -21,7 +21,7 @@ const client = new Client({...});
 
 client.on('messageCreate', (message) => {
   const page1 = new MessageEmbed().setDescription('This is page 1')
-  const page2 = new MessageEmbed().setDescription('This is page 1')
+  const page2 = new MessageEmbed().setDescription('This is page 2')
   if (message.content === 'pagination') {
     const pagination = new ButtonPaginationBuilder(message)
       .setEmbeds(page1, page2)
