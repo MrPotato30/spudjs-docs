@@ -1,4 +1,4 @@
-# ButtonPaginationBuilder
+# <ins>ButtonPaginationBuilder</ins>
 
 ## Constructor
 ```js
@@ -13,7 +13,7 @@ new ButtonPaginationBuilder( data );
 ### .setEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
-| embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | The embeds to set
+| embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | Embeds the pagination instance uses
 
 ---
 
@@ -36,7 +36,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |  TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| ms | [Number]() | ✅ | 0 | The time until the pagination expired |
+| ms | [Number]() | ✅ | 0 | Time until the pagination instance expires |
 
 ---
 
@@ -44,7 +44,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| max | [Number]() | ✅ | 0 | Amount of clicks untill pagination expires |
+| max | [Number]() | ✅ | 0 | Amount of clicks until pagination expires |
 
 
 ---
@@ -53,7 +53,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author | the author of the pagination |
+| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author | Author of the pagination instance |
 
 ---
 
@@ -61,7 +61,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| Channel | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel) | ✅ | message.channel | the channel for pagination |
+| Channel | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel) | ✅ | message.channel | Channel for the pagination instance |
 
 ---
 
@@ -69,7 +69,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| content | [String]() | ✅ | "" | message content |
+| content | [String]() | ✅ | "" | Message content |
 
 ---
 
@@ -77,15 +77,15 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| options | [Object]() | ✅ | { } | reply to the message/interaction |
-| enabled | [Boolean]() | ✅ | false | reply options is enabled or not |
+| options | [Object]() | ✅ | { } | Reply to the message/interaction |
+| enabled | [Boolean]() | ✅ | false | Reply options is enabled or not |
 
 ---
 ### .setIdle([idle]())
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|       idle    |[Boolean]() |✅| false | reset timer on click|
+|       idle    |[Boolean]() |✅| false | Resets the timer on click|
 
 ---
 
@@ -93,7 +93,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    boolean|[Boolean]()   |✅          |   false  |  type in the number of the page you want to travel to  |
+|    boolean|[Boolean]()   |✅          |   false  |  Allows you use numbers for navigation  |
 
 ---
 
@@ -101,7 +101,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|
-|components|[Array]() / [MessageActionRow]()|   ✅  |       the custom components  |
+|components|[Array]() / [MessageActionRow]()|   ✅  |       Allows for custom components to be added  |
 |event|[function]() |   ✅      |       the event for the custom components  | 
 
 ---
@@ -110,7 +110,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    Boolean|[Boolean]()   |✅          |   false  |  button to delete the pagination  |
+|    Boolean|[Boolean]()   |✅          |   false  |  Adds a button to delete the current pagination instance.  |
 
 ---
 
@@ -122,5 +122,8 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    name| [String]() / [ButtonNames](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)   |✅          |   " "  |  the name of the button to customize  |
-|    properties| [Object]() / [ButtonProperties](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)   |✅          |   { }  |  customize button properties  |
+|    name| [String]() / [ButtonNames](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)   |✅          |   " "  |  Name of the button you wish to customize  |
+|    properties| [Object]() / [ButtonProperties](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)   |✅          |   { }  | Allows you to customize button properties  
+---
+
+See [this](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md) to learn how to use `.setButton`
