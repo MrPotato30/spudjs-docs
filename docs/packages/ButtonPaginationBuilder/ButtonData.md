@@ -1,53 +1,53 @@
-# Button Names and Properties
+# <ins>Button Names and Properties</ins>
 
-## ButtonNames
+## <ins>Button Names</ins>
 
-#### type: [String]()
+#### type: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### first
-- Only display if `fastSkip` is enabled
+- Only displayed if `fastSkip` is enabled
 - Travel to the first page
-- default (emoji: ⏪, style: PRIMARY )
+- Default (emoji: ⏪, style: PRIMARY )
 
 ### previous
-- Always display
+- Always displayed
 - Travel to the previous page
-- default (emoji: ◀️, style: PRIMARY )
+- Default (emoji: ◀️, style: PRIMARY )
 
 ### next
-- Always display
+- Always displayed
 - Travel to the next page
-- default (emoji: ▶️, style: PRIMARY )
+- Default (emoji: ▶️, style: PRIMARY )
 
 
 ### last
 - Only display if `fastSkip` is enabled
 - Travel to the last page
-- default (emoji: ⏩, style: PRIMARY )
+- Default (emoji: ⏩, style: PRIMARY )
 
 
 ### pageTravel
-- Only display if `pageTravel` is enabled
+- Only displayed if `pageTravel` is enabled
 - Type in channel the page to travel
-- default (emoji: #️⃣, style: SUCCESS )
+- Default (emoji: #️⃣, style: SUCCESS )
 
 ### pageTravel
-- Only display if `trash` is enabled
-- deletes the pagination
-- default (emoji: ⛔, style: DANGER )
+- Only displayed if `trash` is enabled
+- Deletes the pagination
+- Default (emoji: ⛔, style: DANGER )
 
-## ButtonProperties
+## <ins>Button Properties</ins>
 
-#### type: [Object]()
+#### type: [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
-### style
-- must be a valid discord button style
+### Style
+- The style the button uses. <ins>**Must**</ins> be a valid [Discord Button Style](https://discord.com/developers/docs/interactions/message-components
 
-### emoji
-- button emoji
+### Emoji
+- Emoji displayed on the button
 
-### label
-- button label
+### Label
+- Text displayed on the button
 
 
 --- 
@@ -58,10 +58,9 @@
   style: "SUCCESS", 
   emoji: "⬅️", 
   label: "back"
- })
+});
 ```
 
-### result: 
-- the previous button
+### Result: 
 
 ![image](https://user-images.githubusercontent.com/85820415/170090386-3babc322-56ee-4447-ac63-11da14c7402d.png)
