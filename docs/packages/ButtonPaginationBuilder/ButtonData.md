@@ -31,10 +31,11 @@
 - Type in channel the page to travel
 - Default (emoji: #️⃣, style: SUCCESS )
 
-### pageTravel
+### trash
 - Only displayed if `trash` is enabled
 - Deletes the pagination
 - Default (emoji: ⛔, style: DANGER )
+- Hides `PageTravel` button if enabled
 
 ## <ins>Button Properties</ins>
 
