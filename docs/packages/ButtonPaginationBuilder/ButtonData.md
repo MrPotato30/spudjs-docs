@@ -33,7 +33,7 @@
 
 ### trash
 - Only displayed if `trash` is enabled
-- Deletes the pagination
+- Deletes the pagination if clicked
 - Default (emoji: ⛔, style: DANGER )
 - Hides `PageTravel` button if enabled
 
