@@ -119,11 +119,20 @@ new ButtonPaginationBuilder( data );
 - ButtonNames: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)
 - ButtonProperties: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)
 
+[Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md) to learn how to use `.setButton`
+
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
 |    name| [String]() / [ButtonNames](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)   |✅          |   " "  |  Name of the button you wish to customize  |
 |    properties| [Object]() / [ButtonProperties](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)   |✅          |   { }  | Allows you to customize button properties  
+
 ---
 
-See [this](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md) to learn how to use `.setButton`
+### .setFilter([User]())
+
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|    User|[User](https://discord.js.org/#/docs/discord.js/stable/class/User)   |✅          |   |s a button to delete the current pagination instance.  |
+
+---
