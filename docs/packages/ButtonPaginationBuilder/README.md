@@ -53,7 +53,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author | Author of the pagination instance |
+| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author / message.user | Author of the pagination instance |
 
 ---
 
@@ -133,6 +133,4 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    User|[User](https://discord.js.org/#/docs/discord.js/stable/class/User)   |✅          |   |s a button to delete the current pagination instance.  |
-
----
+|    User|[User](https://discord.js.org/#/docs/discord.js/stable/class/User)   |✅          | message.author / message.user  |The user that can interact with the pagination|
