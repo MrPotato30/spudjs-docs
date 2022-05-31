@@ -23,7 +23,7 @@ new MenuPaginationBuilder( data );
 | data |  [Object]() | | Add the select menu options the pagination instance uses | 
 
 ---
-### .setHome([embeds]())
+### .setHome([...embeds]())
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|
 | embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) |✅ |Embed before pagination is clicked | 
