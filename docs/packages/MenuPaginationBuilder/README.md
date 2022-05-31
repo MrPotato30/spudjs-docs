@@ -10,69 +10,71 @@ new MenuPaginationBuilder( data );
 
 ## Methods
 
-### setPlaceholder(activePlaceholder, ExpiredPlaceholder)
+### setPlaceholder([activePlaceholder](), [ExpiredPlaceholder]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|     activePlaceholder      |               |           |         |           |
-|     ExpiredPlaceholder      |               |           |         |           |
+|     activePlaceholder      |       String        |   ✅        |      " "   |      The placeholder when the select menu is active     |
+|     expiredPlaceholder     |           String    |    ✅       |        " " |      The placeholder when the select menu is expired    |
 ---
 
-### setTime(ms = 0)
-| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+### setTime([ms]())
+| PARAMETER   |  TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| ms | [Number]() | ✅ | 0 | Time until the pagination instance expires |
 ---
 
-### setMax(max = 0)
-| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+### setMax([max]())
+| PARAMETER   |      TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| max | [Number]() | ✅ | 0 | Amount of clicks until pagination expires |
 ---
 
-### setAuthor(user)
+### setAuthor([user]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| user | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author / message.user | Author of the pagination instance |
 ---
 
-### setChannel(channel)
+### setChannel([channel]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| channel | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel) | ✅ | message.channel | Channel for the pagination instance |
 ---
 
-### setContent(content = "")
+### setContent([content]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|:---------:|:-------------:|:-----:|:-----:|:-----:|
+| content | [String]() | ✅ | "" | Message content |
 ---
 
-### replyOption(options, enabled = true)
+### replyOption([options](), [enabled]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+| options | [Object]() | ✅ | { } | Reply to the message/interaction |
+| enabled | [Boolean]() | ✅ | false | Reply options is enabled or not |
 ---
 
-### setIdle(boolean = false)
+### setIdle([boolean]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|       boolean    |[Boolean]() |✅| false | Resets the timer on click|
 ---
 
-### setFilter(User)
+### setFilter([User]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|    User|[User](https://discord.js.org/#/docs/discord.js/stable/class/User)   |✅          | message.author / message.user  |The user that can interact with the pagination|
 ---
 
-### setComponents(components, event)
-| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+### setComponents([components](), [event]())
+| PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|
+|components|[Array]() / [MessageActionRow]()|   ✅  |       Allows for custom components to be added  |
+|event|[function]() |   ✅      |       the event for the custom components  | 
 ---
 
-### setInteraction(Boolean = false)
+### setInteraction([Boolean]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|           |               |           |         |           |
+|      Boolean     |        Boolean       |     ✅      |      false   |   enable interaction (for slash commands)        |
 ---
