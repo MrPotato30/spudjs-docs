@@ -10,11 +10,25 @@ new MenuPaginationBuilder( data );
 
 ## Methods
 
+### .setOptions([...data]())
+| PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
+|----------|-------------|------|------|
+| data |  [Object]() | | Set the select menu options the pagination instance uses | 
+
+---
+
+### .addOptions([...data]())
+| PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
+|----------|-------------|------|------|
+| data |  [Object]() | | Add the select menu options the pagination instance uses | 
+
+---
+
 ### setPlaceholder([activePlaceholder](), [ExpiredPlaceholder]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|     activePlaceholder      |       String        |   ✅        |      " "   |      The placeholder when the select menu is active     |
-|     expiredPlaceholder     |           String    |    ✅       |        " " |      The placeholder when the select menu is expired    |
+|     activePlaceholder      |       [String]()        |   ✅        |      " "   |      The placeholder when the select menu is active     |
+|     expiredPlaceholder     |           [String]()    |    ✅       |        " " |      The placeholder when the select menu is expired    |
 ---
 
 ### setTime([ms]())
@@ -76,5 +90,5 @@ new MenuPaginationBuilder( data );
 ### setInteraction([Boolean]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|      Boolean     |        Boolean       |     ✅      |      false   |   enable interaction (for slash commands)        |
+|      Boolean     |        [Boolean]()       |     ✅      |      false   |   enable interaction (for slash commands)        |
 ---
