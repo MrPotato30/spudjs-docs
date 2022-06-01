@@ -55,7 +55,7 @@
 
 ## Example:
 ```js
-.setButton("previous", {
+.setButtons("previous", {
   style: "SUCCESS", 
   emoji: "⬅️", 
   label: "back"
