@@ -114,7 +114,7 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-### .setButton([name](), [properties]())
+### .setButtons([name](), [properties]())
 - see [example](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#example)
 - ButtonNames: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonnames)
 - ButtonProperties: [Click here](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/ButtonData.md#buttonproperties)
