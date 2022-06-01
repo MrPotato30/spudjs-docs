@@ -4,9 +4,9 @@ If you reading this - you probably wanted pagination, don't worry, we gotchu!
 
 First, install the package. (No sh*t, Sherlock)
 ```
-npm i spud.js@latest
+npm i spud.js@dev
 ```
-`current version is; 2.0.0`
+`current version is; 2.0.0 (dev)`
 After it's done installing, import it to your project/file:
 ```js
 const Spud = require('spud.js');
