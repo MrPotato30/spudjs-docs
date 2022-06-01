@@ -95,5 +95,5 @@ new MenuPaginationBuilder( data );
 ### setInteraction([Boolean]())
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|      Boolean     |        [Boolean]()       |     ✅      |      false   |   enable interaction (for slash commands)        |
+|      Boolean     |        [Boolean]()       |     ✅      |      false   |   Enables interactions (for slash commands)        |
 ---
