@@ -47,7 +47,7 @@ client.on('guildMemberAdd', async(member) => {
   const card = new spud.API.welcomer({
     user: member.user,
     background: 'https://i.pinimg.com/originals/90/cd/dc/90cddc7eeddbac6b17b4e25674e9e971.jpg',
-    avatar: member.user.avatarURL({ format: 'png' }) // Only png and jpg works
+    avatar: member.user.avatarURL({ format: 'png' }), // Only png and jpg works
     text1: `Welcome to our server ${member.user.username}!`,
     memberSize: member.guild.memberCount
   })
