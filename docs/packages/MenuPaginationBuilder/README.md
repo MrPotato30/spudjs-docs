@@ -11,13 +11,18 @@ new MenuPaginationBuilder( data );
 ## Methods
 
 ### .setOptions([...data]())
+- learn [how to use .setOptions()]()
+
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
 | data |  [Object]() | | Set the select menu options the pagination instance uses | 
 
 ---
 
+
 ### .addOptions([...data]())
+- learn [how to use .addOptions()]()
+
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
 | data |  [Object]() | | Add the select menu options the pagination instance uses | 
