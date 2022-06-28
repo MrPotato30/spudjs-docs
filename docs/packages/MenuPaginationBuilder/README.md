@@ -11,7 +11,7 @@ new MenuPaginationBuilder( data );
 ## Methods
 
 ### .setOptions([...data]())
-- learn [how to use .setOptions()]()
+- learn [how to use .setOptions()](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/MenuPaginationBuilder/Options.md#setoptionsarray)
 
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
