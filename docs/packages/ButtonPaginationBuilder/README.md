@@ -1,26 +1,34 @@
+[User]: https://discord.com/developers/docs/resources/user
+[Channel]: https://discord.com/developers/docs/resources/channel
+[Message]: https://discord.js.org/#/docs/discord.js/stable/class/Message
+[MessageActionRow]: https://discord.js.org/#/docs/discord.js/stable/class/MessageActionRow
+[MessageEmbed]: https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed
+[MessageComponents]: https://discord.com/developers/docs/interactions/message-components
+
+
 # <ins>ButtonPaginationBuilder</ins>
 
 ## Constructor
 ```js
 new ButtonPaginationBuilder( data );
 ```
-| PARAMETER   |      TYPE  | OPTIONAL   |
-|----------|-------------|------|
-| data |  [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | |
+| PARAMETER |   TYPE   | OPTIONAL |
+|:---------:|:--------:|:--------:|
+| data      |[Message] |          |
 
 ## Methods
 
 ### .setEmbeds([...embeds]())[*]()
-| PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
-|----------|-------------|------|------|
-| embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | Embeds the pagination instance uses
+| PARAMETER |    TYPE     | OPTIONAL |       DESCRIPTION        |
+|:---------:|:-----------:|:--------:|:-----------------------------------:|
+| embeds |  [MessageEmbed]|          | Embeds the pagination uses |
 
 ---
 
 ### .addEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |----------|-------------|------|------|
-| embeds |  [MessageEmbed](https://discord.js.org/#/docs/discord.js/stable/class/MessageEmbed) | | The embeds to add |
+| embeds |  [MessageEmbed]| | The embeds to add |
 
 ---
 
@@ -36,7 +44,7 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |  TYPE  |  OPTIONAL | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| ms | [Number]() | ✅ | 0 | Time until the pagination instance expires |
+| ms | [Number]() | ✅ | 0 | Time until the pagination expires |
 
 ---
 
@@ -49,19 +57,19 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-### .setAuthor([User]())
+### .setAuthor([User])
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| User | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | ✅ | message.author / message.user | Author of the pagination instance |
+| User | [User]| ✅ | message.author / message.user | Author of the pagination |
 
 ---
 
-### .setChannel([Channel]())
+### .setChannel([Channel])
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:-----:|:-----:|:-----:|
-| Channel | [Channel](https://discord.js.org/#/docs/discord.js/stable/class/Channel) | ✅ | message.channel | Channel for the pagination instance |
+| Channel | [Channel] | ✅ | message.channel | Channel for the pagination |
 
 ---
 
@@ -101,8 +109,9 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|
-|components|[Array]() / [MessageActionRow]()|   ✅  |       Allows for custom components to be added  |
-|event|[function]() |   ✅      |       the event for the custom components  | 
+|components|[Array]() / [MessageActionRow]|✅|Allows for custom components to be added  |
+|collect|[function]() |✅|The event for the custom components|
+|end|[function]()|✅|The event when the collector ends|
 
 ---
 
@@ -110,8 +119,12 @@ new ButtonPaginationBuilder( data );
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    Boolean|[Boolean]()   |✅          |   false  |  Adds a button to delete the current pagination instance.  |
-
+|    Boolean|[Boolean]()   |✅          |   false  |  Adds a button to delete the current pagination.  |
+---
+### .pageFooter([Boolean]())
+| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
+|:---------:|:-------------:|:---------:|:-------:|:---------:|
+|toggle|[Boolean]()|✅|true|Toggle the pagination footer|
 ---
 
 ### .setButtons([name](), [properties]())
@@ -129,8 +142,8 @@ new ButtonPaginationBuilder( data );
 
 ---
 
-### .setFilter([User]())
+### .setFilter([User])
 
 | PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
 |:---------:|:-------------:|:---------:|:-------:|:---------:|
-|    User|[User](https://discord.js.org/#/docs/discord.js/stable/class/User)   |✅          | message.author / message.user  |The user that can interact with the pagination|
+|    User|[User]   |✅          | message.author / message.user  |The user that can interact with the pagination|
