@@ -5,19 +5,19 @@ The base URL is:
 https://spudjs.repl.co/api/{enpoint}
 ```
 
-As of writing, there only 4 endpoints that have been added!
+As of writing, there only 4 endpoints that need been added!
 
 Most of the current endpoints just require you to fetch;
 ```js
-const axios = require('axios'); // You can use any other package for this
+const axios = require('axios'); // You can use any other package for this (axios is recommended)
 
 (async () => {
    const fetched = await axios.get('https://spudjs.repl.co/api/{enpoint}');
-   console.log(fetched.data)
+   console.log(fetched.data);
 })();
 ```
 ## Meme
-Fetches a meme from r/memes<br>
+Fetches a random meme from r/memes<br>
 Very original 100%
 ## Food
 Generates a random...food image?<br>
@@ -28,7 +28,3 @@ For a preview check [`https://welcomer.spudjs.repl.co/generate`](https://welcome
 More detailed info in the [docs](https://github.com/MrPotato30/spudjs-docs/blob/main/docs/api/welcomer.md)
 ## Quote
 Gives a random and (probably) famous quote.
-
-
-
-
