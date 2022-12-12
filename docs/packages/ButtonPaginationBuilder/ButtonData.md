@@ -42,7 +42,7 @@
 #### type: [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ### Style
-- The style the button uses. <ins>**Must**</ins> be a valid [Discord Button Style](https://discord.com/developers/docs/interactions/message-components
+- The style the button uses. <ins>**Must**</ins> be a valid [Discord Button Style](https://discord.com/developers/docs/interactions/message-components)
 
 ### Emoji
 - Emoji displayed on the button
