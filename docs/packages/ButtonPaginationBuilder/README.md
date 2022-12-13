@@ -27,7 +27,7 @@ new ButtonPaginationBuilder( data );
 
 ### .addEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
-|----------|-------------|------|------|
+|:---------:|:-----------:|:--------:|:-----------------------------------:|
 | embeds |  [MessageEmbed]| ❎| The embeds to add |
 
 ---
