@@ -341,15 +341,52 @@
 
 <h3 id="trashboolean">.trash(<a href="">Boolean</a>)</h3>
 
-<p>| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:———:|:————-:|:———:|:——-:|:———:|
-|    Boolean|<a href="">Boolean</a>   |✅          |   false  |  Adds a button to delete the current pagination.  |
-—</p>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER</th>
+      <th>TYPE</th>
+      <th style="text-align: center">OPTIONAL</th>
+      <th style="text-align: center">DEFAULT</th>
+      <th style="text-align: center">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Boolean</td>
+      <td><a href="">Boolean</a></td>
+      <td style="text-align: center">✅</td>
+      <td style="text-align: center">false</td>
+      <td style="text-align: center">Adds a button to delete the current pagination.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
 <h3 id="pagefooterboolean">.pageFooter(<a href="">Boolean</a>)</h3>
-<p>| PARAMETER   |      TYPE  |  OPTIONAL  | DEFAULT |DESCRIPTION|
-|:———:|:————-:|:———:|:——-:|:———:|
-|toggle|<a href="">Boolean</a>|✅|true|Toggle the pagination footer|
-—</p>
+<table>
+  <thead>
+    <tr>
+      <th>PARAMETER</th>
+      <th>TYPE</th>
+      <th style="text-align: center">OPTIONAL</th>
+      <th style="text-align: center">DEFAULT</th>
+      <th style="text-align: center">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Boolean</td>
+      <td><a href="">Boolean</a></td>
+      <td style="text-align: center">✅</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">Toggle the pagination footer</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
 
 <h3 id="setbuttonsname-properties">.setButtons(<a href="">name</a>, <a href="">properties</a>)</h3>
 <ul>
