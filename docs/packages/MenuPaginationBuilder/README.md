@@ -6,7 +6,7 @@ new MenuPaginationBuilder( data );
 ```
 | PARAMETER   |      TYPE  | OPTIONAL   |
 |----------|-------------|------|
-| data |  [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | |
+| data |  [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | - |
 
 ## Methods
 
