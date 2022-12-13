@@ -1,30 +1,13 @@
-<h1 id="buttonpaginationbuilder"><ins>ButtonPaginationBuilder</ins></h1>
+<h2 id="buttonpaginationbuilder"><ins>ButtonPaginationBuilder</ins></h2>
 <h2 id="constructor">Constructor</h2>
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">new</span> <span class="nx">ButtonPaginationBuilder</span><span class="p">(</span> <span class="nx">data</span> <span class="p">);</span>
-</code></pre></div></div>
-<table>
-  <thead>
-    <tr>
-      <th>PARAMETER</th>
-      <th>TYPE</th>
-      <th style="text-align: center">OPTIONAL</th>
-      <th style="text-align: center">DEFAULT</th>
-      <th style="text-align: center">DESCRIPTION</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>data</td>
-      <td><a href="">Message</a></td>
-      <td style="text-align: center">❎</td>
-      <td style="text-align: center">-</td>
-      <td style="text-align: center">The message</td>
-    </tr>
-  </tbody>
-</table>
+<pre
+              class="prettyprint"
+              onclick="copyText(this)"
+            ><code class="language-javascript">new ButtonPaginationBuilder( data );</code></pre>
+
+<br/>
 
 <h2 id="methods">Methods</h2>
-
 <h3 id="setembedsembeds">.setEmbeds(<a href="">…embeds</a>)<a href="">*</a></h3>
 <table>
   <thead>
