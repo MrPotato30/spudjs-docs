@@ -14,21 +14,21 @@ new ButtonPaginationBuilder( data );
 ```
 | PARAMETER |   TYPE   | OPTIONAL |
 |:---------:|:--------:|:--------:|
-| data      |[Message] |   ❎       |
+| data      |[Message]() |   ❎       |
 
 ## Methods
 
 ### .setEmbeds([...embeds]())[*]()
 | PARAMETER |    TYPE     | OPTIONAL |       DESCRIPTION        |
 |:---------:|:-----------:|:--------:|:-----------------------------------:|
-| embeds |  [MessageEmbed]|     ❎     | Embeds the pagination uses |
+| embeds |  [MessageEmbed]()|     ❎     | Embeds the pagination uses |
 
 ---
 
 ### .addEmbeds([...embeds]())[*]()
 | PARAMETER   |      TYPE  |  OPTIONAL  |DESCRIPTION|
 |:---------:|:-----------:|:--------:|:-----------------------------------:|
-| embeds |  [MessageEmbed]| ❎| The embeds to add |
+| embeds |  [MessageEmbed]()| ❎| The embeds to add |
 
 ---
 
