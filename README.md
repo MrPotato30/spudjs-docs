@@ -159,11 +159,11 @@ pagination.send();</code></pre>
             pagination and menu pagination including builders, and more
             customizations options.
           </p>
-          <button onclick="showTab('buttonPagination')">
+          <button onclick="window.open('https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/ButtonPaginationBuilder/README.md')">
             button pagination
             <i class="fa-duotone fa-arrow-up-right-from-square"></i>
           </button>
-          <button onclick="showTab('menuPagination')">
+          <button onclick="window.open('https://github.com/MrPotato30/spudjs-docs/blob/main/docs/packages/MenuPaginationBuilder/README.md')">
             menu pagination
             <i class="fa-duotone fa-arrow-up-right-from-square"></i>
           </button>
